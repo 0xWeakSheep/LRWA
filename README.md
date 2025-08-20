@@ -1,4 +1,4 @@
-# NFT Protocol - 解决NFT与RWA流动性困局的创新协议
+# LRWA Protocol - 解决NFT与RWA流动性困局的创新协议
 
 ## 项目简介
 
