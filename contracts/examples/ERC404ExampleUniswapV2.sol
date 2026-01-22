@@ -1,5 +1,5 @@
 //SPDX-License-Identifier: MIT
-pragma solidity ^0.8.0;
+pragma solidity ^0.8.20;
 
 import {Ownable} from "@openzeppelin/contracts/access/Ownable.sol";
 import {Strings} from "@openzeppelin/contracts/utils/Strings.sol";
@@ -17,7 +17,7 @@ contract ERC404ExampleUniswapV2 is Ownable, ERC404, ERC404UniswapV2Exempt {
     address uniswapV2Router_
   )
     ERC404(name_, symbol_, decimals_)
-    Ownable()
+    Ownable(initialOwner_)
     ERC404UniswapV2Exempt(uniswapV2Router_)
   {
     // Do not mint the ERC721s to the initial owner, as it's a waste of gas.
